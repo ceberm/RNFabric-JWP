@@ -26,8 +26,9 @@ While this PoC utilizes a "bleeding-edge" stack, it serves as a reference for ar
 ## 🛠️ Getting Started
 
 1. Clone the repository.
-2. Add your JW Player License Key in the `local.properties` or the designated configuration file.
-3. Sync Gradle and run the `:app` module.
+2. Run `npm install`
+3. Run`npx react-native run-android`.
+4. Check the Result. Video should play when clicking the button.
 
 ---
 
