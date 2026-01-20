@@ -1,0 +1,31 @@
+buildscript {
+    ext {
+        buildToolsVersion = "36.0.0"
+        minSdkVersion = 24
+        compileSdkVersion = 36
+        targetSdkVersion = 36
+        ndkVersion = "27.1.12297006"
+        kotlinVersion = "2.1.20"
+        compose_version = "1.4.3"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+        classpath 'org.jetbrains.kotlin:compose-compiler-gradle-plugin:2.1.20'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'https://mvn.jwplayer.com/content/repositories/releases/'
+        }
+    }
+}
+
+apply plugin: "com.facebook.react.rootproject"
