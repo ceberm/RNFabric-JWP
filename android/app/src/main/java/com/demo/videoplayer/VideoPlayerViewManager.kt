@@ -45,7 +45,6 @@ class VideoPlayerViewManager(context: ReactApplicationContext): SimpleViewManage
         val view = FrameLayout(reactContext)
 
         // Add view from the video Project
-        // with a callback to this ViewManager
         mPlayerViewContainer = WeakReference(
             ReactFragment()
         )
@@ -62,7 +61,7 @@ class VideoPlayerViewManager(context: ReactApplicationContext): SimpleViewManage
         // Execute the commit immediately or can use commitNow() instead
         activity?.get()?.supportFragmentManager?.executePendingTransactions()
 
-        // This step is needed to in order for ReactNative to render the view
+        // This step is needed for ReactNative to render the view
         view.addView(mPlayerViewContainer!!.get()!!.requireView())
 
         return view
@@ -70,11 +69,13 @@ class VideoPlayerViewManager(context: ReactApplicationContext): SimpleViewManage
 
     @ReactProp(name = PLAYLIST)
     override fun setPlaylist(view: FrameLayout, playlist: String?) {
+        // TODO: just send this to the viewmodel to handle the playlist
         Log.i("VideoPlayerViewManager", "set playlist")
     }
 
     @ReactProp(name = VIDEO_INDEX)
     override fun setVideoIndex(view: FrameLayout, index: Int) {
+        // TODO: send this to the viewmodel to handle the playback startup
         Log.i("VideoPlayerViewManager", "set video index")
     }
 
