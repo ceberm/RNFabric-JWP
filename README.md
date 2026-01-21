@@ -28,6 +28,7 @@ While this PoC utilizes a "bleeding-edge" stack, it serves as a reference for ar
 1. Clone the repository.
 2. Run `npm install`
 3. Run`npx react-native run-android`.
+4. Add the license key on the `setLicenseKey` method on `ReactFragment.kt`
 4. Check the Result. Video should play when clicking the button.
 
 ---
