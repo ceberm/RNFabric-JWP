@@ -26,7 +26,7 @@ import com.jwplayer.pub.api.license.LicenseUtil
 class ReactFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        LicenseUtil().setLicenseKey(context, "9lUDtL21LDXnCJ99wNX/jNKLY/sIWgvu9JsBCQ==")
+        LicenseUtil().setLicenseKey(context, "")
         super.onCreate(savedInstanceState)
     }
 
