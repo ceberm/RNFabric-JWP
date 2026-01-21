@@ -32,12 +32,6 @@ While this PoC utilizes a "bleeding-edge" stack, it serves as a reference for ar
 
 ---
 
-That’s a smart move. In a PoC, being transparent about what *isn't* there is just as important as showing what *is* there—it prevents people from trying to copy-paste it directly into production without thinking!
-
-Here is the **Known Limitations** section formatted to match the rest of your README:
-
----
-
 ## ⚠️ Known Limitations & Disclaimer
 
 As this is a **Spike/Proof of Concept**, please keep the following in mind:
